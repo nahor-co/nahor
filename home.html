@@ -1,0 +1,208 @@
+<div class="container-fluid" id="tabsContainer">
+
+	<div class="row">
+		<div class="col-md-4">
+			<img src="nahor.png" class="img-responsive center-block"
+				alt="Responsive image">
+		</div>
+		<div class="col-md-8">
+			</br> </br>
+			<ul class="nav nav-tabs" id="tabMenu">
+				<li id="About-tab" class="active"><a data-target="#about"
+					data-toggle="tab">About Us</a></li>
+				<li id="Software-tab"><a data-target="#software"
+					data-toggle="tab">Software Services</a></li>
+				<li id="Contact-tab"><a data-target="#contact"
+					data-toggle="tab">Contact Us</a></li>
+			</ul>
+
+		</div>
+
+	</div>
+
+	<div id="tabContent" class="tab-content">
+
+		<div id="about" class="tab-pane active">
+			</br>
+			<p class="lead">Full cycle software development and operations
+				capabilities</p>
+			<p class="lead">Working in collaboration with your business, we
+				deliver high quality software services to meet your needs. Please
+				explore our range of software services</p>
+
+		</div>
+
+		<div id="software" class="tab-pane">
+			</br>
+			<ul class="nav nav-tabs" id="tabMenu2">
+				<li id="DevOps-tab" class="active"><a data-target="#devops"
+					data-toggle="tab">DevOps</a></li>
+				<li id="Development-tab"><a data-target="#development"
+					data-toggle="tab">Development</a></li>
+				<li id="Test-tab"><a data-target="#test" data-toggle="tab">Test</a></li>
+				<li id="Management-tab"><a data-target="#management"
+					data-toggle="tab">Management</a></li>
+				<li id="Consultancy-tab"><a data-target="#consultant"
+					data-toggle="tab">Consultancy</a></li>
+			</ul>
+
+			<div id="tabContent2" class="tab-content">
+
+				<div id="devops" class="tab-pane active">
+					</br>
+
+					<dl class="dl-horizontal">
+						<dt>Version Control</dt>
+						<dd>Implement the right version control practices</dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>CI</dt>
+						<dd>Enable teams to produce high quality software</dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>Automation</dt>
+						<dd>Reduce manual intervention in the release process</dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>Cloud Infra</dt>
+						<dd>Achieve higher levels of agility and availability</dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>Security</dt>
+						<dd>Build security into software delivery</dd>
+					</dl>
+				</div>
+				<div id="development" class="tab-pane">
+					</br>
+					<dl class="dl-horizontal">
+						<dt>Back-end</dt>
+						<dd>Loosely coupled, highly cohesive software</dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>Front-end</dt>
+						<dd>Optimise your users experience</dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>Mobile</dt>
+						<dd>Build consistent, easy to maintain, multi channel
+							solutions</dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>Data</dt>
+						<dd>Strategies to manage data efficiently</dd>
+					</dl>
+				</div>
+
+				<div id="test" class="tab-pane">
+					</br>
+					<dl class="dl-horizontal">
+						<dt>UI Testing</dt>
+						<dd>Behaviour driven automated testing</dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>Service Tests</dt>
+						<dd>Engage APIs for better test isolation</dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>Unit Tests</dt>
+						<dd>Improve test code coverage</dd>
+					</dl>
+				</div>
+
+				<div id="management" class="tab-pane">
+					</br>
+					<dl class="dl-horizontal">
+						<dt>Tech leaders</dt>
+						<dd>Simple conversations around complex technical detail</dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>Engagement</dt>
+						<dd>Transparent stakeholder engagement, allowing the team to focus</dd>
+					</dl>
+				</div>
+
+				<div id="consultant" class="tab-pane">
+					</br>
+					<dl class="dl-horizontal">
+						<dt>Roadmap Review</dt>
+						<dd>Achieve your business goals with technology</dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>Pipeline Analysis</dt>
+						<dd>Optimise software delivery velocity</dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>Supply Chain Risk</dt>
+						<dd>Model risk to your business continuity</dd>
+					</dl>
+				</div>
+
+
+			</div>
+
+		</div>
+
+		<div id="contact" class="tab-pane">
+			</br>
+			<div ng-hide="messageSent">
+				<form class="form-horizontal">
+					<div class="form-group">
+						<label for="name" class="col-sm-2 control-label">Name</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="name"
+								placeholder="Name">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="email" class="col-sm-2 control-label">Email</label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="email"
+								placeholder="Email">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="message" class="col-sm-2 control-label">Message</label>
+						<div class="col-sm-10">
+							<textarea class="form-control" rows="6"></textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<button type="submit" class="btn btn-default"
+								ng-click="contactUs()">Submit</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div ng-show="messageSent">
+				<p class="lead">Thanks for your message, we look forward to
+					meeting your business needs</p>
+			</div>
+
+		</div>
+
+
+		<footer class="navbar-fixed-bottom">
+
+			<div class="row">
+
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<small>Our vision is to find what works best for you | info@nahor.co.uk</small>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+
+			<div class="row">
+
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<h6>2021 Nahor Limited. Registered in England and Wales with
+						company number 13781533</h6>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+
+		</footer>
+
+	</div>
