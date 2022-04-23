@@ -1,5 +1,7 @@
 # nahor
 
+[![S3 Sync](https://github.com/nahor-co/nahor/actions/workflows/workflow.yml/badge.svg)](https://github.com/nahor-co/nahor/actions/workflows/workflow.yml)
+
 create s3 bucket
 enable public access
 set bucket policy to allow GetObject
