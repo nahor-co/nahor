@@ -24,4 +24,4 @@ jobs:
 
     - name: Copy files to the test website with the AWS CLI
       run: |
-        aws s3 sync . s3://nahor.ml
+        aws s3 sync . s3://nahor.co.uk
