@@ -2,18 +2,15 @@
 
 	<div class="row">
 		<div class="col-md-4">
-			<img src="nahor.png" class="img-responsive center-block"
-				alt="Responsive image">
+			<img src="nahor.png" class="img-responsive center-block" alt="Responsive image">
 		</div>
 		<div class="col-md-8">
 			</br> </br>
 			<ul class="nav nav-tabs" id="tabMenu">
-				<li id="About-tab" class="active"><a data-target="#about"
-					data-toggle="tab">About Us</a></li>
-				<li id="Software-tab"><a data-target="#software"
-					data-toggle="tab">Software Services</a></li>
-				<li id="Contact-tab"><a data-target="#contact"
-					data-toggle="tab">Contact Us</a></li>
+				<li id="About-tab" class="active"><a data-target="#about" data-toggle="tab">About Us</a></li>
+				<li id="Blog"><a data-target="#blog" data-toggle="tab">Blog</a></li>
+				<li id="Software-tab"><a data-target="#software" data-toggle="tab">Software Services</a></li>
+				<li id="Contact-tab"><a data-target="#contact" data-toggle="tab">Contact Us</a></li>
 			</ul>
 
 		</div>
@@ -29,29 +26,18 @@
 			<p class="lead">Working in collaboration with your business, we
 				deliver high quality software services to meet your needs. Please
 				explore our range of software services</p>
-                        <p class="lead">For latest and greatest, checkout our <a href="https://medium.com/@nahor">blog</a>
-<div id="retainable-rss-embed" 
-data-rss="https://medium.com/feed/@nahor"
-data-maxcols="3" 
-data-layout="grid" 
-data-poststyle="inline" 
-data-readmore="Read the rest" 
-data-buttonclass="btn btn-primary" 
-data-offset="-100"></div>
+
+			<p class="lead">For more great content follow our blog</p>
 		</div>
 
 		<div id="software" class="tab-pane">
 			</br>
 			<ul class="nav nav-tabs" id="tabMenu2">
-				<li id="DevOps-tab" class="active"><a data-target="#devops"
-					data-toggle="tab">DevOps</a></li>
-				<li id="Development-tab"><a data-target="#development"
-					data-toggle="tab">Development</a></li>
+				<li id="DevOps-tab" class="active"><a data-target="#devops" data-toggle="tab">DevOps</a></li>
+				<li id="Development-tab"><a data-target="#development" data-toggle="tab">Development</a></li>
 				<li id="Test-tab"><a data-target="#test" data-toggle="tab">Test</a></li>
-				<li id="Management-tab"><a data-target="#management"
-					data-toggle="tab">Management</a></li>
-				<li id="Consultancy-tab"><a data-target="#consultant"
-					data-toggle="tab">Consultancy</a></li>
+				<li id="Management-tab"><a data-target="#management" data-toggle="tab">Management</a></li>
+				<li id="Consultancy-tab"><a data-target="#consultant" data-toggle="tab">Consultancy</a></li>
 			</ul>
 
 			<div id="tabContent2" class="tab-content">
@@ -150,6 +136,14 @@ data-offset="-100"></div>
 
 		</div>
 
+		<div id="blog" class="tab-pane">
+			<br>
+			<div class="row">
+				<posts-panel posts="posts"></posts-panel>
+			</div>
+
+		</div>
+
 		<div id="contact" class="tab-pane">
 			</br>
 			<div ng-hide="messageSent">
@@ -157,15 +151,13 @@ data-offset="-100"></div>
 					<div class="form-group">
 						<label for="name" class="col-sm-2 control-label">Name</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="name"
-								placeholder="Name">
+							<input type="text" class="form-control" id="name" placeholder="Name">
 						</div>
 					</div>
 					<div class="form-group">
 						<label for="email" class="col-sm-2 control-label">Email</label>
 						<div class="col-sm-10">
-							<input type="email" class="form-control" id="email"
-								placeholder="Email">
+							<input type="email" class="form-control" id="email" placeholder="Email">
 						</div>
 					</div>
 					<div class="form-group">
@@ -176,8 +168,7 @@ data-offset="-100"></div>
 					</div>
 					<div class="form-group">
 						<div class="col-sm-offset-2 col-sm-10">
-							<button type="submit" class="btn btn-default"
-								ng-click="contactUs()">Submit</button>
+							<button type="submit" class="btn btn-default" ng-click="contactUs()">Submit</button>
 						</div>
 					</div>
 				</form>
@@ -188,29 +179,6 @@ data-offset="-100"></div>
 			</div>
 
 		</div>
-
-
-		<footer class="navbar-fixed-bottom">
-
-			<div class="row">
-
-				<div class="col-md-2"></div>
-				<div class="col-md-8">
-					<small>Our vision is to find what works best for you | info@nahor.co.uk</small>
-				</div>
-				<div class="col-md-2"></div>
-			</div>
-
-			<div class="row">
-
-				<div class="col-md-2"></div>
-				<div class="col-md-8">
-					<h6>2021 Nahor Limited. Registered in England and Wales with
-						company number 13781533</h6>
-				</div>
-				<div class="col-md-2"></div>
-			</div>
-
-		</footer>
-
 	</div>
+
+</div>
