@@ -2,24 +2,16 @@
 
 [![S3 Sync](https://github.com/nahor-co/nahor/actions/workflows/workflow.yml/badge.svg)](https://github.com/nahor-co/nahor/actions/workflows/workflow.yml)
 
-create s3 bucket
-enable public access
-set bucket policy to allow GetObject
-enable website endpoint
-aws s3 sync nahor "s3://bucket-name"
+AngularJS website, brining you the latest and greatest from us here at nahor.
 
-add route53 hosted zone
-add route53 dns records
-- ns - from domain registra
+See our defined actions for how we maintain our velocity through continous delivery.
 
-create cloudfront distribution
-use certificate 
-- set required cnames
-- validte cert via dns
-set redirect to https
-set additional cnames as per cert
-add default path index.html
+Do you want your own static website?
 
-add route53 dns records
-- A (alias) to cf distribution domain
-- CNAME to cf distribtion domain
+Do you want it at minimal cost?
+
+Do you want security, reliability and performance best practices out the box?
+
+Find out how we host https://medium.com/@nahor/200-ok-b38a4169cba5
+
+Contact us for more
